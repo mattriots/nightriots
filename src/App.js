@@ -1,13 +1,15 @@
 import React from 'react';
 import './fonts/FuturaPTBook.ttf';
 import Home from './components/Home';
+import Navbar from './components/Navbar';
+import Videos from './components/Videos';
 
 const App = () => {
    return (
-      <div className="bg-main bg-cover bg-no-repeat bg-center h-screen">
-         <div className="w-full h-full backdrop-brightness-75">
-            <Home />
-         </div>
+      <div>
+         <Navbar />
+         <Home />
+         <Videos />
       </div>
    );
 };
