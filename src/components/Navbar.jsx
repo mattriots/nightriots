@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
+import { Link } from 'react-scroll';
 import symbol from '../assets/symbol.png';
 
 const Navbar = () => {
@@ -13,12 +14,24 @@ const Navbar = () => {
             <img src={symbol} alt="symbol" className="w-[50px]" />
          </div>
          {/* Menu */}
-         <ul className="hidden md:flex">
-            <li>Home</li>
-            <li>Music</li>
-            <li>Video</li>
-            <li>Merch</li>
-            <li>Contact</li>
+         <ul className="hidden md:flex ">
+            <li className="hover:text-white duration-300">
+               <Link to="home" smooth={true} duration={500}>
+                  Home
+               </Link>
+            </li>
+            <li className="hover:text-white duration-300">
+               <Link to="music" smooth={true} duration={500}>
+                  Music
+               </Link>
+            </li>
+            <li className="hover:text-white duration-300">
+               <Link to="videos" smooth={true} duration={500}>
+                  Videos
+               </Link>
+            </li>
+            <li className="hover:text-white duration-300">Merch</li>
+            <li className="hover:text-white duration-300">Contact</li>
          </ul>
          {/* Hamburger */}
          <div onClick={handleClick} className="md:hidden z-10">
