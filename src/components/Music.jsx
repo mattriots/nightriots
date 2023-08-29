@@ -2,9 +2,9 @@ import React from 'react';
 
 const Music = () => {
    return (
-      <div name="music" className="w-full bg-main h-screen">
-         <div className="w-full h-full backdrop-brightness-75">
-            <div className="flex justify-center items-center pt-20">
+      <div name="music" className="w-full bg-main bg-cover bg-no-repeat bg-center h-screen z-0">
+         <div className="w-full h-full backdrop-brightness-75 ">
+            <div className="flex justify-center items-center py-40">
                <div className="w-3/4 max-w-3xl md:w-3/5">
                   <iframe
                      className="br-8"

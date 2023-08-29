@@ -5,7 +5,7 @@ import title_name from '../assets/title_name.png';
 
 const Home = () => {
    return (
-      <div name="home" className="w-full h-screen bg-main">
+      <div name="home" className="w-full h-screen bg-main z-0">
          <div className="w-full h-full backdrop-brightness-75">
             <div className="flex justify-center items-center pt-14">
                <div className="md:w-1/2 px-9 ">
