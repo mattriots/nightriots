@@ -68,7 +68,7 @@ npm run build
 I aim to set up CI/CD pipelines using GitHub Actions to automate testing and deployment tasks.
 
 ### Figuring out how to upload and launch the updated site on nightriots.com
-The next major milestone is to launch the updated site to replace the old Square Space-based website. I are exploring various deployment options and strategies.
+The next major milestone is to launch the updated site to replace the old Square Space-based website. I am exploring various deployment options and strategies.
 
 ### Utilize APIs from Spotify or Other Music Sources
 To enhance the user experience, I plan to integrate APIs from Spotify or other music platforms to offer more interactive and rich content, such as music previews, playlists, and artist information.
