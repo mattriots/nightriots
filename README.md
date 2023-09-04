@@ -60,3 +60,29 @@ For deployment, you can use any cloud service you prefer. Make sure to build the
 
 ```bash
 npm run build
+```
+
+## 🌱 Next Steps
+
+### Setting up and Utilizing Continuous Integration with GitHub Actions
+I aim to set up CI/CD pipelines using GitHub Actions to automate testing and deployment tasks.
+
+### Figuring out how to upload and launch the updated site on nightriots.com
+The next major milestone is to launch the updated site to replace the old Square Space-based website. I am exploring various deployment options and strategies.
+
+### Utilize APIs from Spotify or Other Music Sources
+To enhance the user experience, I plan to integrate APIs from Spotify or other music platforms to offer more interactive and rich content, such as music previews, playlists, and artist information.
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! To get started, fork the repository, make your changes, and submit a pull request. For major changes, please open an issue for discussion before submitting a pull request.
+
+## 📜 Licenses
+
+- The code in this project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+
+
+
+
