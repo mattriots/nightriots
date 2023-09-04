@@ -1,18 +1,52 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 import symbol from '../assets/symbol.png';
+import SpotifyData from './SpotifyData';
+
+// Made it so that a random track is displayed in the navbar from the top 10 songs
+// Would be cool to make it link to something or maybe even just play that song
 
 const Navbar = () => {
    const [nav, setNav] = useState(false);
    const handleClick = () => setNav(!nav);
+
+   const data = SpotifyData();
+
+   const [randomTrack, setRandomTracks] = useState(null);
+
+   useEffect(() => {
+      const getRandomTrack = (arr) => {
+         const randomIndex = Math.floor(Math.random() * arr.length);
+         return arr[randomIndex];
+      };
+
+      let tracks = data?.tracks;
+
+      console.log('NAVBAR' + tracks);
+
+      const randomTrack = getRandomTrack(tracks || []);
+
+      console.log('TRACK' + randomTrack);
+
+      setRandomTracks(randomTrack);
+   }, [data]);
+
    return (
       <div
          name="navbar"
          className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-transparent text-gray-950 shadow-lg z-10">
          <div>
             <img src={symbol} alt="symbol" className="w-[50px]" />
+            {randomTrack && (
+               <div>
+                  <h1>{randomTrack.name} &lt;=== Random song</h1>
+                  {/* Display other properties of randomTrack here */}
+               </div>
+            )}
          </div>
+         <div></div>
+
          {/* Menu */}
          <ul className="hidden md:flex ">
             <li className="hover:-translate-y-1 hover:text-white hover:scale-110 duration-300">
