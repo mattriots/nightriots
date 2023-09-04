@@ -11,8 +11,8 @@ const SpotifyData = () => {
 
    useEffect(() => {
       const fetchData = async () => {
-         const client_id = '9bc1f164ab034b23a00d47bfa402fe1f';
-         const client_secret = 'affce514d9de471881c53ce04aee6722';
+         const client_id = process.env.REACT_APP_CLIENT_ID;
+         const client_secret = process.env.REACT_APP_CLIENT_SECRET;
 
          console.log(client_id, client_secret);
 
