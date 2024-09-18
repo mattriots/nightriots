@@ -1,11 +1,21 @@
-import React from 'react'
+import React from 'react';
 
 const Contact = () => {
-  return (
-     <div name="videos" className="w-full h-full backdrop-brightness-75">
-        Contact
-     </div>
-  );
-}
+   return (
+      <div name="contact" className="backdrop-brightness-75 flex justify-center py-10">
+         {/* email address */}
+         <a href="mailto:example@example.com" className="mx-4">
+            Email Us{' '}
+         </a>
+         {/* social media links */}
+         <a href="https://www.instagram.com/nightriots" className="mx-4">
+            Instagram
+         </a>
+         <a href="https://www.youtube.com/nightriots" className="mx-4">
+            YouTube
+         </a>
+      </div>
+   );
+};
 
-export default Contact
+export default Contact;

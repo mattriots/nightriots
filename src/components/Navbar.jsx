@@ -23,11 +23,11 @@ const Navbar = () => {
 
       let tracks = data?.tracks;
 
-      console.log('NAVBAR' + tracks);
+      // console.log('NAVBAR' + tracks);
 
       const randomTrack = getRandomTrack(tracks || []);
 
-      console.log('TRACK' + randomTrack);
+      // console.log('TRACK' + randomTrack);
 
       setRandomTracks(randomTrack);
    }, [data]);
@@ -40,7 +40,7 @@ const Navbar = () => {
             <img src={symbol} alt="symbol" className="w-[50px]" />
             {randomTrack && (
                <div>
-                  <h1>{randomTrack.name} &lt;=== Random song</h1>
+                  <h1>Song of the Day: {randomTrack.name}</h1>
                   {/* Display other properties of randomTrack here */}
                </div>
             )}
