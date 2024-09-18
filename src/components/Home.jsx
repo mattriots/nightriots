@@ -15,10 +15,10 @@ const Home = () => {
    }, [data]);
 
    return (
-      <div name="home" className="w-full min-h-screen pt-[80px] bg-main z-0">
-         <div className="w-full h-full backdrop-brightness-75">
+      <div name="home" className="w-full min-h-screen bg-main z-0">
+         <div className="w-full h-full backdrop-brightness-75 pt-[80px]">
             <div className="flex justify-center items-center">
-               <div className="md:w-1/2 px-9 ">
+               <div className="md:w-1/2 px-9">
                   <img
                      src={logo}
                      alt="Logo"

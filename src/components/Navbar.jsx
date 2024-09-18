@@ -35,7 +35,7 @@ const Navbar = () => {
    return (
       <div
          name="navbar"
-         className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-transparent text-gray-950 shadow-lg z-10">
+         className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-main text-gray-950 shadow-lg z-10">
          <div>
             <img src={symbol} alt="symbol" className="w-[50px]" />
             {randomTrack && (
@@ -65,10 +65,14 @@ const Navbar = () => {
                </Link>
             </li>
             <li className="hover:-translate-y-1 hover:text-white hover:scale-110 duration-300">
-               Merch
+               <Link to="merch" smooth={true} duration={500}>
+                  Merch
+               </Link>
             </li>
             <li className="hover:-translate-y-1 hover:text-white hover:scale-110 duration-300">
-               Contact
+               <Link to="Contact" smooth={true} duration={500}>
+                  Contact
+               </Link>
             </li>
          </ul>
          {/* Hamburger */}
