@@ -9,6 +9,9 @@ module.exports = {
          fontFamily: {
             futura: ['Futura', 'sans-serif'],
          },
+         backgroundColor: {
+            'yellowish': '#fec951',
+         },
       },
    },
    plugins: [],

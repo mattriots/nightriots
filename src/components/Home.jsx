@@ -15,44 +15,30 @@ const Home = () => {
    }, [data]);
 
    return (
-      <div name="home" className="w-full min-h-screen bg-main z-0">
-         <div className="w-full h-full backdrop-brightness-75 pt-[80px]">
-            <div className="flex justify-center items-center">
-               <div className="md:w-1/2 px-9">
-                  <img
-                     src={logo}
-                     alt="Logo"
-                     className="pt-10 block object-cover w-l object-center"
-                  />
-                  <img
-                     src={nsom_cover}
-                     alt="Cover"
-                     className="pt-10 block object-cover w-l object-center"
-                  />
-                  <img
-                     src={title_name}
-                     alt="Title"
-                     className="pt-10 block object-cover w-l object-center"
-                  />
-                  <h1 className="pt-7 font-medium text-4xl text-center text-white leading-18">
-                     OUT NOW
-                  </h1>
+      <div name="home" className="backdrop-brightness-75 pt-[80px]">
+         <div className="flex justify-center items-center">
+            <div className="md:w-1/2 px-9 grid place-items-center">
+               <img src={logo} alt="Logo" className="pt-10" />
+               <img src={nsom_cover} alt="Cover" className="pt-10" />
+               <img src={title_name} alt="Title" className="pt-10" />
+               <h1 className="pt-7 font-medium text-4xl text-center text-white leading-18">
+                  OUT NOW
+               </h1>
 
-                  {/* This checks if data is available and then displays it */}
-                  {data && (
-                     <div>
-                        <h1 className="pt-7 font-medium text-4xl text-center text-white leading-18">
-                           {}
-                        </h1>
-                        <h1 className="pt-7 font-medium text-4xl text-center text-white leading-18">
-                           {}
-                        </h1>
-                        <h1 className="pt-7 font-medium text-4xl text-center text-white leading-18">
-                           {}
-                        </h1>
-                     </div>
-                  )}
-               </div>
+               {/* This checks if data is available and then displays it */}
+               {data && (
+                  <div>
+                     <h1 className="pt-7 font-medium text-4xl text-center text-white leading-18">
+                        {}
+                     </h1>
+                     <h1 className="pt-7 font-medium text-4xl text-center text-white leading-18">
+                        {}
+                     </h1>
+                     <h1 className="pt-7 font-medium text-4xl text-center text-white leading-18">
+                        {}
+                     </h1>
+                  </div>
+               )}
             </div>
          </div>
       </div>

@@ -8,11 +8,11 @@ import Merch from './components/Merch';
 import Contact from './components/Contact';
 const App = () => {
    return (
-      <div>
+      <div className="bg-yellowish">
          <Navbar />
          <Home />
          <Music />
-         <Videos /> 
+         <Videos />
          <Merch />
          <Contact />
       </div>
