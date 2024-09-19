@@ -21,7 +21,7 @@ const Home = () => {
                <img src={logo} alt="Logo" className="pt-10" />
                <img src={nsom_cover} alt="Cover" className="pt-10" />
                <img src={title_name} alt="Title" className="pt-10" />
-               <h1 className="pt-7 font-medium text-4xl text-center text-white leading-18">
+               <h1 className="pt-6 font-medium text-4xl text-center text-white leading-18">
                   OUT NOW
                </h1>
 
