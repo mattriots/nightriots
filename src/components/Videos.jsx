@@ -4,9 +4,10 @@ const Videos = () => {
    return (
       <div>
          <div name="videos" className="backdrop-brightness-75">
-            <div className="flex justify-center items-center py-20">
-               <div className="mx-auto p-10 flex flex-col justify-center w-full h-full">
-                  <div className="w-full h-full grid grid-cols-1 md:grid-cols-2 gap-4 py-8">
+            <h1 className="pt-2 font-medium text-4xl text-center text-white leading-18">VIDEOS</h1>
+            <div className="flex justify-center items-center pt-5 pb-20">
+               <div className="mx-auto px-10 pb-10 flex flex-col justify-center w-full h-full">
+                  <div className="w-full h-full grid grid-cols-1 md:grid-cols-2 gap-4">
                      <iframe
                         className="w-full h-48 md:h-96 max-w-2xl mx-auto"
                         src="https://www.youtube.com/embed/Z9uk16bTZOs?si=fckeDmx7pr8pYiUI"
