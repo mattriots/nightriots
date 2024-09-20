@@ -2,7 +2,7 @@ import React from 'react';
 
 const Contact = () => {
    return (
-      <div name="contact" className="backdrop-brightness-75 flex justify-center py-10">
+      <div name="contact" className="backdrop-brightness-75 flex justify-center pt-20 pb-20">
          {/* email address */}
          <a href="mailto:example@example.com" className="mx-4">
             Email Us{' '}

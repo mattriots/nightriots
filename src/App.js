@@ -11,7 +11,7 @@ const App = () => {
       <div className="bg-yellowish">
          <Navbar />
          <Home />
-         <Music />
+         {/* <Music /> */}
          <Videos />
          <Merch />
          <Contact />
