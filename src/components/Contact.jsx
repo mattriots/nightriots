@@ -2,10 +2,10 @@ import React from 'react';
 
 const Contact = () => {
    return (
-      <div name="contact" className="backdrop-brightness-75 flex justify-center pt-20 pb-20">
+      <div name="contact" className="flex justify-center pt-20 pb-10">
          {/* email address */}
-         <a href="mailto:example@example.com" className="mx-4">
-            Email Us{' '}
+         <a href="mailto:nightriots@gmail.com" className="mx-4">
+            Email Us
          </a>
          {/* social media links */}
          <a href="https://www.instagram.com/nightriots" className="mx-4">

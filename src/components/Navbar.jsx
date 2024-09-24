@@ -23,11 +23,7 @@ const Navbar = () => {
 
       let tracks = data?.tracks;
 
-      // console.log('NAVBAR' + tracks);
-
       const randomTrack = getRandomTrack(tracks || []);
-
-      // console.log('TRACK' + randomTrack);
 
       setRandomTracks(randomTrack);
    }, [data]);
@@ -35,17 +31,16 @@ const Navbar = () => {
    return (
       <div
          name="navbar"
-         className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-yellowish text-gray-950 shadow-lg z-10">
+         className="sticky top-0 w-full h-[80px] flex justify-between items-center px-4 bg-yellowish text-gray-950 shadow-lg z-10">
          <div>
             <img src={symbol} alt="symbol" className="w-[50px]" />
             {randomTrack && (
                <div>
-                  <h1>Song of the Day: {randomTrack.name}</h1>
+                  <h1>Song of the Moment: {randomTrack.name}</h1>
                   {/* Display other properties of randomTrack here */}
                </div>
             )}
          </div>
-         <div></div>
 
          {/* Menu */}
          <ul className="hidden md:flex ">
@@ -54,11 +49,11 @@ const Navbar = () => {
                   Home
                </Link>
             </li>
-            <li className="hover:-translate-y-1 hover:text-white hover:scale-110 duration-300">
+            {/* <li className="hover:-translate-y-1 hover:text-white hover:scale-110 duration-300">
                <Link to="music" smooth={true} duration={500}>
                   Music
                </Link>
-            </li>
+            </li> */}
             <li className="hover:-translate-y-1 hover:text-white hover:scale-110 duration-300">
                <Link to="videos" smooth={true} duration={500}>
                   Videos
@@ -93,11 +88,11 @@ const Navbar = () => {
                   Home
                </Link>
             </li>
-            <li className="py-6 text-4xl">
+            {/* <li className="py-6 text-4xl">
                <Link onClick={handleClick} to="music" smooth={true} duration={500}>
                   Music
                </Link>
-            </li>
+            </li> */}
             <li className="py-6 text-4xl">
                <Link onClick={handleClick} to="videos" smooth={true} duration={500}>
                   Videos

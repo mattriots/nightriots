@@ -2,7 +2,7 @@ import React from 'react';
 
 const Music = () => {
    return (
-      <div name="music" className="backdrop-brightness-75">
+      <div name="music" className="">
          <div className="flex justify-center items-center py-20">
             <div className="w-3/4 max-w-3xl md:w-3/5">
                <iframe

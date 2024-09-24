@@ -15,7 +15,7 @@ const Home = () => {
    }, [data]);
 
    return (
-      <div name="home" className="backdrop-brightness-75 pt-[80px]">
+      <div name="home" className=" pt-[80px]">
          <div className="flex justify-center items-center">
             <div className="md:w-1/2 px-9 grid place-items-center">
                <img src={logo} alt="Logo" className="pt-10" />
