@@ -8,7 +8,7 @@ import Merch from './components/Merch';
 import Contact from './components/Contact';
 const App = () => {
    return (
-      <div className="bg-yellowish">
+      <div className=" bg-yellowish">
          <Navbar />
          <Home />
          {/* <Music /> */}

@@ -6,7 +6,7 @@ import sumerian from '../assets/sumerian_logo.avif';
 
 const Merch = () => {
    return (
-      <div name="merch" className="backdrop-brightness-75">
+      <div name="merch" className="">
          <h1 className="pt-2 font-medium text-4xl text-center text-white leading-18">MERCH</h1>
          <div className="grid grid-cols-2 md:grid-cols-4 gap-1 pt-5 px-10 md:gap-4 ">
             <a href="https://wearepk.bandcamp.com/album/into-the-roaring">
